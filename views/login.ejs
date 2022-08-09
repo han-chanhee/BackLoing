@@ -1,0 +1,21 @@
+<h1>Login</h1>
+<% if (messages.error) { %>
+<%= messages.error %>
+<% } %>
+<!-- 모든 양식을입력 받는 이 이름에 경로에  게시를 할 것임을 의미한다-->
+<form action="/login" method="POST">
+    <!-- 행 만들기  로그인에대한 모든정보-->
+
+
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Login</button>
+</form>
+<a href="/register">Register</a>
